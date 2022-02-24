@@ -5,4 +5,5 @@
 * Shows all courses
 * Routing is used
 * 404 Error page if path not found
+* Custom hook used
 

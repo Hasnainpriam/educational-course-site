@@ -12,7 +12,7 @@ const SingleCourses = (props) => {
     <div class="p-6">
       <h5 class="text-gray-900 text-xl font-medium mb-2">{course_name}</h5>
       <p class="text-gray-700 text-base mb-4">
-       {description}
+       {description.slice(0,120)}
       </p>
       <p class="text-gray-700 text-base mb-2 font-medium">
       Instructor : {instructor}

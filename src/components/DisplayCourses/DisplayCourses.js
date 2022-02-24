@@ -1,14 +1,9 @@
 import React, { useEffect, useState } from 'react';
+import useCourse from '../../hooks/useCourse';
 import Course from '../Course/Course';
 import './DisplayCourses.css'
 const DisplayCourses = () => {
-  const [courses,setCourses]=useState([])
-  useEffect(()=>{
-    fetch('./fakeData.json')
-    .then(res => res.json())
-    .then(data => setCourses(data))
-  },[])
-
+  const [courses]=useCourse()
 
   return (
     <>
